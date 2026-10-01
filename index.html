@@ -7,13 +7,52 @@
     <link rel="stylesheet" href="css/materialize.css">
 </head>
 <body>
-    
+    <header class="container">
+        <h1 style="text-align: center; font-size: 40px; font-weight: bold; background-color: black; color: white; ">STUDENT REGISTRATION FORM</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <span style="font-weight: bold;">1. PERSONAL DATA</span>
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col s12 m3 l3">
+                            <input type="text" id="surname">
+                            <label for="surname">Surname</label>
+                        </div>
+                        <div class="col s12 m3 l3">
+                            <input type="text" id="firstname">
+                            <label for="firstname">First Name</label>
+                        </div>
+                        <div class="col s12 m3 l3">
+                            <input type="text" id="othernames">
+                            <label for="othernames">Other Names</label>
+                        </div>
+                        <div class="col s12 m3 l3">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Passport</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                     
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="./js/jquery.js"></script>
 <script src="./js/materialize.js"></script>
 <script>
     $(document).ready( ()=>{
-        
+
     })
 </script>
 </html>

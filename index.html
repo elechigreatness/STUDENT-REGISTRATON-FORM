@@ -78,16 +78,30 @@
                         </div>
 
                         <div class="col s12 m6 l6">
-                            <div>
-                                <input type="text" id="state of origin">
-                                <label for="state of origin">State of Origin</label>
+                            <div class="input-field">
+                                <select name="state_of_origin" id="state_of_origin_select">
+                                    <option value="" disabled selected>Choose State</option>
+                                    <option value="1">Abia</option>
+                                    <option value="2">Adamawa</option>
+                                    <option value="3">Akwa ibom</option>
+                                    <option value="4"> Anambra</option>
+                                    <option value="4">Bauchi</option>
+
+                                </select>
+                                <label>State Of Origin</label>
                             </div>
                         </div>
 
                         <div class="col s12 m6 l6">
-                            <div>
-                                <input type="text" id="lga">
-                                <label for="lga">L.G.A</label>
+                            <div class="input-field">
+                                <select name="local governmet area" id="local governmet area">
+                                    <option value="" disabled selected>Choose LGA</option>
+                                    <option value="1">Aba North</option>
+                                    <option value="2">Yola North</option>
+                                    <option value="3">Akwa South</option>
+                                    <option value="4">Bauchi</option>
+                                </select>
+                                <label>LGA</label>
                             </div>
                         </div>
 
@@ -265,7 +279,9 @@
 <script src="./js/materialize.js"></script>
 <script>
     $(document).ready( ()=>{
-
+    $('select').formSelect();
+    
     })
+    
 </script>
 </html>
